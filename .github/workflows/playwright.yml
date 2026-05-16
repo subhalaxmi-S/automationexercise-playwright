@@ -3,10 +3,10 @@ name : Playwright Test Suite
 on:
   push:
     branches:
-      -main
+      - main
   pull_request:
     branches:
-      -main
+      - main
 
 jobs:
   test:
@@ -28,7 +28,7 @@ jobs:
 
       # Step 3- Install dependencies
       - name: Install Dependencies
-        run: nom ci
+        run: npm ci
 
       # Step 4- Run Playwright browsers
       - name: Install Playwright Browsers
