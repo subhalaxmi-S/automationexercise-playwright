@@ -17,11 +17,11 @@ jobs:
     steps:
       # Step 1- Checkout the repository
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
 
         # Step 2- Setup Node.js
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.4.0
         with:
           node-version: '18'
           cache: 'npm'
@@ -40,7 +40,7 @@ jobs:
 
       # Step 6- Upload HTML report (always, even on failure)
       - name: Upload Playwright HTML Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4.6.2
         if: always() # Ensure this runs even if tests fail
         with:
           name: playwright-html-report
