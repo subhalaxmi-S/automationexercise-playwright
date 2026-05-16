@@ -1,0 +1,25 @@
+{
+    "validUser": {
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "password": "Password123",
+        "title": "Mr",
+        "day": "1",
+        "month": "January",
+        "year": "1990",
+        "firstName": "John",
+        "lastName": "Doe",
+        "company": "Example Inc.",
+        "address": "123 Main St",
+        "country": "United States",
+        "state": "California",
+        "city": "Los Angeles",
+        "zipcode": "90001",
+        "mobileNumber": "1234567890"
+    },
+    
+    "invalidUser": {
+        "email": "invalidemail@gmail.com",
+        "password": "short"
+    }
+}
